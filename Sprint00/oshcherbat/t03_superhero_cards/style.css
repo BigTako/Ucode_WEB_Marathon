@@ -1,0 +1,80 @@
+img {
+    width: 150px;
+    height: 182px;
+}
+div {
+    display: inline-block;
+}
+
+.postcard {
+    height: 213px;
+    width: 270px;
+    position: relative;
+}
+
+.text {
+    margin-right: 10px;
+    text-align: right;
+    font-size: 12px;
+    color: white;
+    font-family: Verdana;
+}
+.hero_name {
+    text-align: right;
+    font-size: 9px;
+    color : rgba(255, 255, 255, 0.5)
+}
+
+#cap_background {
+    width: 270px;
+    height: 140px;
+    background: linear-gradient(#4568DC, #B06AB3);
+    position: absolute;
+    margin-top: 47px;
+    border-radius: 5px;
+}
+#tony_background {
+    width: 270px;
+    height: 140px;
+    background: linear-gradient(#e52d27, #b31217);
+    position: absolute;
+    margin-top: 47px;
+    border-radius: 5px;
+
+}
+#bw_background {
+    width: 270px;
+    height: 140px;
+    background: linear-gradient(#000, #61045F);
+    position: absolute;
+    margin-top: 47px;
+    border-radius: 5px;
+
+}
+#peter_background {
+    margin-top: 20px;
+    width: 270px;
+    height: 140px;
+    background: linear-gradient(#e52d27, #000);
+    position: absolute;
+    margin-top: 47px;
+    border-radius: 5px;
+}
+
+
+#cap_pic {
+    position: absolute;
+    margin-top: -10px;
+}
+#tony_pic {
+    position: absolute;
+    margin-top: -10px;
+}
+#bw_pic {
+    position: absolute;
+    margin-top: -10px;
+}
+#peter_pic {
+    position: absolute;
+    margin-top: +35px;
+}

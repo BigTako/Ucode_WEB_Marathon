@@ -1,0 +1,19 @@
+body{
+    font-family: monospace;
+}
+
+.portfolio{
+    width: 40%;
+    height: auto;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.portfolio button{
+    margin: 5px;
+}
+
+.portfolio img{
+    width: 100%;
+    height: auto;
+}

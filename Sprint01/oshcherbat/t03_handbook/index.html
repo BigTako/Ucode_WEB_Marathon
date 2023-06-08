@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>t03_handbook</title>
+</head>
+<body>
+    <h1 id="title">Homebook</h1>
+    <div class="links">
+        <ul style="font-size:2rem;">
+          <li><a href="#html_title">HTML</a></li>
+          <li><a href="#css_title">CSS</a></li>
+          <li><a href="#protocols_title">Protocols</a></li>
+        </ul>
+      </div>
+    <h3 class="sub_title" id="html_title">HTML</h3>
+
+    <div id="chapter">
+        <div id="inner_chapter">
+            <h4>h1</h4>
+            <p>The hl to h6 tags are used to define HTML headings</p>
+            <code>&lt;h1&gt;Title&lt;/h1&gt;</code>
+            <h1>Title</h1>
+        </div>
+        <div id="inner_chapter">
+            <h4>table</h4>
+            <p>defines an HTML table</p>
+            <code>&lt;table&gt;Title&lt;/table&gt;</code>
+            <br><br>
+            <table>
+                <tr>
+                   <td>Country</td> 
+                   <td>Country</td> 
+                   <td>Country</td> 
+                </tr>
+                <tr>
+                    <td>1</td> 
+                    <td>2</td> 
+                    <td>3</td> 
+                 </tr>
+            </table>
+        </div>
+        <div id="inner_chapter">
+            <h4>hr</h4>
+            <p>draws a horizontal line</p>
+            <code>&lt;hr&gt;</code>
+            <hr>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diem nonummy nibh<hr>
+        </div>
+        <div id="inner_chapter">
+            <h4>input</h4>
+            <p>Designed to create text fields, various buttons, radio buttons and checkboxes</p>
+            <code>&lt;input attributes&gt;</code>
+            <br><br>
+            <label>Your name</label>
+            <input type="text">
+            <br><br>
+            <label>Question</label>
+            <br>
+            <form>
+                <label>
+                  <input type="radio" name="color" value="red">
+                  answer
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="color" value="red">
+                    answer
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="color" value="red">
+                    answer
+                </label>
+            </form>
+        </div>
+        <div id="inner_chapter">
+            <h4>button</h4>
+            <p>Clickable button.</p>
+            <code>&lt;button&gt;Button&lt;/button&gt;</code>
+            <br><br>
+            <button>Button</button>
+        </div>
+    </div>
+
+    <h3 class="sub_title" id="css_title">CSS</h3>
+    <div id="chapter">
+        <div id="inner_chapter">
+            <h4>opacity</h4>
+            <p>specifies the opacity/transparency of an element</p>
+            <p><code>opacity: 0.8</code></p>
+            <div class="color-chapter" style="width:75px;">
+                <div style="background-color:rgba(255, 0, 0, 1);color:rgb(255, 0, 0);">a</div>      
+                <div style="background-color:rgba(255, 0, 0, 0.8);color:rgba(255, 0, 0, 0.0);">a</div>      
+                <div style="background-color:rgba(255, 0, 0, 0.5);color:rgba(255, 0, 0, 0.0);">a</div>      
+                <div style="background-color:rgba(255, 0, 0, 0.2);color:rgba(255, 0, 0, 0.0);">a</div> 
+            </div> 
+        </div>
+        <div id="inner_chapter">
+            <h4>border</code></h4>
+            <p>specifies the style of the outline</p>
+            <p><code>border-bottom:2px solid #666;</code></p>
+            <br>
+            <div class="border_example">b</div>
+        </div>
+        <div id="inner_chapter">
+            <h4>background</h4>
+            <p>specifies the background of an element</p>
+            <p><code>background: []</code></p>
+            <div style="width:200px;height:100px;background-color: red;margin:10px;">Text</div>
+        </div>
+        <div id="inner_chapter">
+            <h4>line-height</h4>
+            <p>specifies the height of a line</p>
+            <p><code>line-height:1.5;</code></p>
+            <p style="line-height: 1.5;">Lorem ipsum dolor.</p>
+            <p>Lorem ipsum dolor.</p>
+        </div>
+        <div id="inner_chapter">
+            <h4>font-size</h4>
+            <p>specifies the font size of the item. %,px,rem,inherit</p>
+            <p><code>font-size:20px;</code></p>
+            <p style="font-size:20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione,</p>
+        </div>
+        <div id="inner_chapter">
+            <h4>text-transform</h4>
+            <p>controls the capitalization of text</p>
+            <p><code>text-transform: uppercase;</code></p>
+            <br>
+            <p style="text-transform: uppercase;margin:0;">Lorem</p>ipsum Dolor Sit Amet.
+        </div>
+    </div>
+    
+    <h3 class="sub_title" id="protocols_title">Protocols</h3>
+    <div id="chapter2">
+        <div id="inner_chapter2">
+            <h4>HTTP/HTTPS methods</h4>
+            <p>
+                GET - use this type of requests to retrieve resource
+                representation/information only — and not to modify it in any
+                way
+            </p>
+            <p>
+                POST - used to create a new resource into the collection of
+                resources
+            </p>
+            <p>
+                PUT - use it primarily to update existing resource (if the resource
+                does not exist then API may decide to create a new resource or
+                not)
+            </p>
+            <p>
+                DELETE - used to delete resources (identified by the Request-URI)
+            </p>
+            <p>
+                PATCH - HTTP PATCH requests are to make partial update on a
+                resource
+            </p>
+        </div>
+        <div id="inner_chapter2">
+            <h4>HTTP/HTTPS status code</h4>
+            <p>
+                Ixx: Informational<br>
+                example: 100 Continue
+            </p>
+            <p>
+                2xx: Success<br>
+                example: 201 Created
+            </p>
+            <p>
+                3xx: Redirection<br>
+                example: 301 Moved Permanently
+            </p>
+            <p>
+                4xx: Client Error<br>
+                example: 404 Not Found
+            </p>
+            <p>
+                5xx: Server Error<br>
+                example: 500 Internal Server Error
+            </p>
+        </div>
+        <div id="inner_chapter2">
+            <h4>DNS list by types</h4>
+            <p>
+                A - (address record) - specifies IP address (IPv4) for given host, A
+                records are used for conversion of domain names to
+                corresponding IP addresses
+            </p>
+            <p>
+                AAAA (IPv6 address record) - specifies IPv6 address for given
+                host, so it works the same way as the A record and the
+                difference is the type of IP address
+            </p>
+            <p>
+                CNAME (canonical name record) - specifies a domain name that
+                has to be queried in order to resolve the original DNS query.
+                Therefore CNAME records are used for creating aliases of
+                domain names. CNAME records are truly useful when we want
+                to alias our domain to an external domain. In other cases we can
+                remove CNAME records and replace them with A records and
+                even decrease overhead
+            </p>
+            <p>
+                HINFO (Host Information records) - used to acquire general
+                information about a host. The record specifies type of CPU and
+                OS. The HINFO record data provides the possibility to use
+                operating system specific protocols when two hosts want to
+                communicate. For security reasons the HINFO records are not
+                typically used on public servers
+            </p>
+            <p>
+                NS (name server) - specifies an authoritative name server for
+                given host
+            </p>
+            <p>
+                PTR (Reverse-lookup Pointer records) - AS opposed to forward
+                DNS resolution (A and AAAA DNS records), the PTR record is
+                used to look up domain names based on an IP address
+            </p>
+            <p>
+                SOA (Start of Authority records) - The record specifies core
+                information about a DNS zone, including the primary name
+                server, the email of the domain administrator, the domain serial
+                number, and several timers relating to refreshing the zone
+            </p>
+            <p>
+                TXT (Text records) - The text record can hold arbitrary non-
+                formatted text string. Typically, the record is used by Sender
+                Policy Framework (SPF) to prevent fake emails to appear to be
+                sent by you
+            </p>
+        </div>
+        <div id="inner_chapter2">
+            <h4>Identifying google's IP</h4>
+            <p>
+                To identify google.com IP, follow the next steps:
+            </p>
+            <p>
+                1. open Terminal
+            </p>
+            <p>
+                2. paste and run the command nslookup google.com
+            </p>
+            <p>
+                As result, you will receive "name" and "address":
+                Name: google.com.ua
+                Address: 216.58.215.99
+                Repeat steps 1 and 2 to identify google.com.ua IP
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

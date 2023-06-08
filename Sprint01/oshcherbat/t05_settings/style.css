@@ -1,0 +1,295 @@
+body{
+    font-family: monospace;
+    font-size: 1.3rem;
+    color:white;
+}
+
+.menu_background{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 500px;
+    background-color: rgb(43, 43, 43);
+}
+
+aside{
+    float: right;
+    width: 87px;
+    height: 350px;
+    background-color:rgb(65, 58, 58);
+    border-radius: 0px 20px 20px 0;
+    margin-top: 75px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside img{
+    margin: 20px;
+}
+
+.menu{
+    height: 450px;
+    width: 675px;
+    border: 1px solid white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(60, 63, 65);
+}
+
+.input_panel{
+    flex-grow:2;
+    display: flex;
+    margin-right: 3rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:50%;
+    height: 100%;
+}
+
+.input_panel *{
+    margin-left: 10px;
+    margin-right: 10px;;
+}
+
+.input_panel select{
+    font-family: monospace;
+    font-size: 1rem;
+    height: 30px;
+    background-color: rgb(128, 128, 128);
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(65, 58, 58);
+}
+
+.color_panel{
+    flex-grow:3;
+    margin-left: 3rem;
+    margin-right: 1rem;
+    width:50%;
+    height: 100%;
+}
+
+.color_div {
+    text-align: center;
+    /* margin-left: -10px; */
+    padding: 0;
+}
+
+.color_div label[for="_first"] {
+    background-color: blue;
+}
+.color_div label[for="_second"] {
+    background-color: green;
+    margin-left:8px;
+}
+.color_div label[for="_third"] {
+    background-color: purple;
+    margin-left:8px;
+}
+.color_div label[for="_fourth"] {
+    background-color: yellow;
+    margin-left:8px;
+}
+.color_div label[for="_fifth"] {
+    background-color: orange;
+}
+
+.color_div input {
+    display: none;
+}
+
+.color_label {
+    /* margin: 10px; */
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+
+#_first:checked + label[for="_first"]::after{
+    color: white;
+    position: absolute;
+    content: "\2714";
+    margin-left: -6px;
+    margin-top: -10px;
+}
+
+#_second:checked + label[for="_second"]::after{
+    color: white;
+    position: absolute;
+    content: "\2714";
+    margin-left: -6px;
+    margin-top: -10px;
+
+}
+#_third:checked + label[for="_third"]::after {
+    color: white;
+    position: absolute;
+    content: "\2714";
+    margin-left: -6px;
+    margin-top: -10px;
+}
+
+#_fourth:checked + label[for="_fourth"]::after {
+    color: white;
+    position: absolute;
+    content: "\2714";
+    margin-left: -6px;
+    margin-top: -10px;
+}
+#_fifth:checked + label[for="_fifth"]::after {
+    color: white;
+    position: absolute;
+    content: "\2714";
+    margin-left: -6px;
+    margin-top: -10px;
+}
+
+#font_weight_controller input{
+    background-color: #5c9fa8;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(65, 58, 58);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.switch_menu {
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.UI_text {
+  font-family: monospace;
+  margin-top: 5px;
+  display: flex;
+  justify-self: start;
+  font-size: 20px;
+}
+  
+.sett_label {
+    margin-top: 30px;
+    font-family: monospace;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.range_button:focus{
+    outline: none;
+}
+
+.box_text_for_range {
+    margin: 10px;
+    display: flex;
+    color: white;
+}
+
+.range_button:active{
+    outline: none;
+}
+
+.small_A {
+    display: flex
+}
+
+.big_A {
+    position: relative;
+    width: 15px;
+    font-size: 30px;
+    margin-left: calc(60%);
+    display: flex
+}
+
+.range_button{
+    margin-left: 15px;
+    width: 70%;
+    appearance: none;
+    background: none;
+    
+}
+
+.range_div{
+    position: relative;
+    width: 100%;
+    height: 5%;
+}
+
+.range_button {
+    height: 1px;
+    background-color: black;
+
+}
+
+.range_button::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #5c9fa8;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}

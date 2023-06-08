@@ -1,0 +1,72 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#menu-buttons-container{
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:30px;
+}
+
+#menu-buttons-container button{
+    width: 40%;
+    height: 100%;
+    border:none;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+
+#add-button{
+    color:white;
+    background-color: rgb(101, 206, 203);
+}
+
+#add-button:active{
+    background-color: rgba(101, 206, 203, 0.621);
+}
+
+#clear-button:active{
+    background-color: grey;
+}
+
+#input-container{
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding:10px;
+    margin:30px;
+}
+
+#text-input{
+    height: 100%;
+    border-radius: 10px;
+    border:none;
+}
+
+#notes-acrchive-container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    padding:10px;
+    margin:30px;
+}
+
+
+#text-output{
+    position: relative;
+    height: auto;
+    width: auto;
+    background-color: white;
+    border-radius: 10px;
+    padding:10px;
+}
+

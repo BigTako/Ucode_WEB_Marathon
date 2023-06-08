@@ -1,0 +1,41 @@
+.thanosStone {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: rotate(45deg);
+  
+}
+.red {
+  background-color: rgb(214, 58, 84);
+  left: 330px;
+  top: 250px;
+}
+.green {
+  background-color: rgb(69, 215, 101);
+  left: 60px;
+  top: 140px;
+}
+.pink {
+  background-color: rgb(215, 87, 124);
+  left: 80px;
+  top: 350px;
+}
+.blue {
+  background-color: rgb(6, 133, 215);
+  left: 160px;
+  top: 230px;
+}
+.purple {
+  background-color: rgb(166, 77, 215);
+  left: 310px;
+  top: 100px;
+}
+.yellow {
+  background-color: rgb(215, 196, 81);
+  left: 150px;
+  top: 30px;
+}
+
+.blocked_stone {
+  border: 4px dashed black;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <h1 >Engine Store Family</h1>
+        <div id="main_menu">
+            <div id="client_buttons">
+                <p class="p">Account</p>
+                <p class="p">Catalog</p>
+                <p class="p">Toretto@gmail.com / +3809213123123</p>
+            </div>
+            <input type="text" name="myText" id="myText" value="Search">
+        </div>
+    </div>
+    <div id="breadcrumb">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><span aria-current="page">Catalog</span></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <div>
+            <h1 id="name_package">Catalog</h1>
+            <div id="filters">
+                <p class="filters">For Car</p>
+                <p class="filters">Engine V8 Toretto choice</p>
+                <p class="filters">Expensive</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="filter">
+            <span style="text-align: center;"><p>Filters</p></span>
+            <ul id="checklist">
+                <li>
+                  <label>
+                    <input type="checkbox" checked>
+                    For Car
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox">
+                    For Motocycle
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox">
+                    Chip
+                  </label>
+                </li>
+                <li>
+                    <label>
+                      <input type="checkbox">
+                      Expensive
+                    </label>
+                  </li>
+              </ul>
+              <span id="span"><p>Price</p></span>
+              <div class="volume-control">
+                <p>400$</p>
+                <div class="slider-wrapper">
+                  <input type="range" min="0" max="10000" value="5000" id="volume-slider">
+                </div>
+                <p>200.000$</p>
+              </div>
+        </div>
+        <div id="goods_panel">
+            <div class="good_preview">
+                <img src="assets/images/1.jpg" alt="#" >
+                <div class="description">
+                    <p>Torettos Engine 3000HP</p>
+                    <p>345.000.000$</p>
+                    <p>available</p>
+                    <a href="card.html" id="available">Buy</a>
+                </div>
+            </div>
+            <div class="good_preview">
+                <img src="assets/images/2.jpg" alt="#" >
+                <div class="description">
+                    <p>2.JZ Turbo 760HP</p>
+                    <p>9.800$</p>
+                    <p>not available</p>
+                    <a href="#" class="button">Buy</a>
+                </div>
+            </div>
+            <div class="good_preview">
+                <img src="assets/images/3.jpg" alt="#" >
+                <div class="description">
+                    <p>V8 Disel Clasik 360HP</p>
+                    <p>1.200$</p>
+                    <p>not available</p>
+                    <a href="#" class="button">Buy</a>
+                </div>
+            </div>
+            <div class="good_preview">
+                <img src="assets/images/4.jpg" alt="#" >
+                <div class="description">
+                    <p>V6 Disel TI 640-940HP</p>
+                    <p>3.100$+</p>
+                    <p>not available</p>
+                    <a href="#" class="button">Buy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="paggination"> 
+        <a href="#" class="paggination">1</a> 
+        <a href="#" class="paggination">2</a> 
+        <a href="#" class="paggination">3</a> 
+        <a href="#" class="paggination">4</a> 
+        <a href="#" class="paggination">5</a> 
+    </div>
+    <footer>
+        <p>Created by TORETTO AND FAMILY</p>
+    </footer>
+</body>
+</html>

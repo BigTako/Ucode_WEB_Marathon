@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>t05_settings</title>
+</head>
+<body>
+    <div class="menu_background">
+        <aside>
+            <img src="assets/images/artistic-brush.png">
+            <img src="assets/images/computer-screen.png">
+            <img src="assets/images/sms-speech-bubble.png">
+            <img src="assets/images/user-icon.png">
+        </aside>
+        <div class="menu">
+            <div class="input_panel">
+                <label>Typeface</label>
+                <select>
+                    <option value="option1">Acunim Pro</option>
+                    <option value="option2">Comic Sans</option>
+                    <option value="option3">Times New Roman</option>
+                </select>
+                <label>Weight</label>
+                <label id="font_weight_controller">
+                    <input type="checkbox">
+                    Regular
+                  </label>
+                  <label>
+                    <input type="checkbox">
+                    Bold
+                </label>
+                <div class = "sett_label">Size</div>
+                <div class="range_div"><input class = "range_button" type="range" min="0" max="999" step="1" value="1"></div>
+                <div class = "box_text_for_range">
+                    <div class = "small_A">A</div> 
+                    <div class = "big_A"><b>A</b></div>
+                </div>
+            </div>
+            <div class="color_panel">
+                <div class="switch_menu">
+                    <div class = "UI_text">Dark UI</div>
+                    <label class="switch UI_switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                
+                <div id="color_checkboxes">
+                    <label>Color</label>
+                    <div class = "color_div">
+                        <input type = "checkbox" id = "_first"><label class = "color_label" for = "_first"></label>
+                        <input type = "checkbox" id = "_second"><label class = "color_label" for = "_second"></label>
+                        <input type = "checkbox" id = "_third"><label class = "color_label" for = "_third"></label>
+                        <input type = "checkbox" id = "_fourth"><label class = "color_label" for = "_fourth"></label>
+                        <input type = "checkbox" id = "_fifth"><label class = "color_label" for = "_fifth"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

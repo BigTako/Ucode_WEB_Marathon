@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+    width: 600px;
+    height:400px;
+}
+
+td {
+    padding: 10px;
+}
+
+/* Colors for table cells */
+.person 
+{
+    padding: 10px;
+    background-image: url('./assets/images/2.png');
+    background-size:contain; 
+    background-repeat: no-repeat;
+    background-position: center;     
+}
+
+#thanos_gauntlet:hover + table #have_to_die td.person:nth-child(odd) {
+    background-image: none;
+}
+
+#thanos_gauntlet:hover + table #have_to_live td.person:nth-child(even) {
+    background-image: none;
+}
+
+#thanos_gauntlet{
+    width: 100px;
+    height: 140px;
+}
+

@@ -1,0 +1,118 @@
+body {
+  font-family: monospace;
+}
+
+.menu_left {
+  background-color: #bbecff;
+}
+
+.menu_right {
+  background-color: #a2a2a2;
+}
+
+h1 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#header {
+  position: relative;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: auto;
+  text-align: center;
+  height: 75px;
+  background: linear-gradient(to right, #0351ed, #faab01);
+}
+
+#body ul {
+  list-style: none;
+  padding: 0;
+  min-width: 200px;
+  background-color: #f9f9f9;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 1px;
+}
+
+#body > div > ul > li {
+  position: relative;
+}
+
+#body > div > ul > li > ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  background-color: #f9f9f9;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  margin-top: 1px;
+  margin-left: -6px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+#body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#body > div > ul > li > ul > li > .right {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 104%;
+  min-width: 150px;
+  background-color: #f5de80;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+#body > div > ul > li > ul > li > .left {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 104%;
+  min-width: 150px;
+  background-color: #f4faee;
+  padding: 5px;
+  border: 1px solid #cccccc;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+
+#body > div > ul > li:hover > ul {
+  display: block;
+}
+
+#body > div > ul > li:hover > ul > li > ul {
+  display: none;
+}
+
+#body > div > ul > li > ul > li:hover > ul {
+  display: block;
+}
+
+#body > div > ul > li p {
+  margin: 0;
+  padding: 5px;
+}
+
+#body > div > ul > li > ul > li {
+  position: relative;
+}
+
